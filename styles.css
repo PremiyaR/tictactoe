@@ -1,0 +1,132 @@
+#title1 {
+    font-family: sans-serif;
+    font-variant: small-caps;
+    font-weight: bold;
+    font-style: italic;
+    font-size: 50px;
+    color: white;
+    text-shadow: 4px 4px  rgb(255, 111, 0);
+    padding-left: 7px;
+    text-decoration: 3px underline ;
+}
+
+#sub {
+    position: absolute;
+    top: 510px;
+    left: 960px;
+    font-family: sans-serif;
+    font-weight: bold;
+    font-style: italic;
+    font-size: 25px;
+    color: white;
+    text-shadow: 2px 2px  rgb(255, 111, 0);
+}
+
+a {
+    color: inherit;
+}
+
+#title {
+    position: absolute;
+    top: -30px;
+    left: 10px;
+    font-family: sans-serif;
+    font-variant: small-caps;
+    font-weight: bold;
+    font-style: italic;
+    font-size: 30px;
+    color: white;
+    text-shadow: 4px 4px  rgb(255, 111, 0);
+    padding-left: 7px;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(39, 40, 40);
+}
+
+.back-button {
+    font-variant: small-caps;
+    position: absolute;
+    top:40px;
+    right: 25px;
+    color: white;
+    font-size: 28px;
+    text-shadow: 1.5px 2px orange;
+    background-color: rgb(39, 40, 40);
+    font-style: italic;
+    border: none;
+    font-weight: bolder;
+    text-decoration: none;
+/*box-shadow: 2px 2px rgb(255, 111, 0);*/
+}
+
+
+#game-board {
+    justify-content: center;
+    align-items: center;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 5px;
+    width: 300px;
+    margin-bottom: 10px;
+    border: 5px solid black;
+    /*box-shadow: 10px 10px 7px rgb(64, 112, 113);*/
+}
+
+.square {
+    background-color: white;
+    width: 100%;
+    height: 100px;
+    border: 8px black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 65px;
+    color: rgb(39, 40, 40);
+    text-shadow: 3px 3px orange;
+    font-weight: bold;
+    font-family: sans-serif;
+    cursor: pointer;
+    font-style: italic;
+    box-shadow: 7px 7px 2px orange;
+}
+
+#game-status {
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: white;
+    text-shadow: 2px 2px orange;
+    padding: 5px;
+    font-style: italic;
+}
+
+#reset-button {
+    position: absolute;
+    top: 250px;
+    left: 925px;
+    font-size: 20px;
+    border: 2px solid  white;
+    font-style: italic;
+    font-weight: bold;
+    cursor: pointer;
+    background-color: rgb(39, 40, 40);
+    /*background-color: rgb(231, 39, 39)*/;
+    text-shadow: 2px 2px rgb(255, 111, 0);
+    border: none;
+    color: white;
+    transition: transform 0.05s;
+    text-decoration: underline;
+}
+
+.reset-button:active{
+    transform: translateX(2px) translateY(2px)
+}
